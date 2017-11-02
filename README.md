@@ -21,3 +21,10 @@ CDW Part: 3689850
 UNSPSC: 43222501
 
 https://www.cdw.com/shop/products/Palo-PA-200-security-appliance/3689850.aspx?pfm=srh
+
+Cisco ASA 5506-X with FirePOWER Services - security appliance
+Mfg. Part: ASA5506-K9
+CDW Part: 3616643
+UNSPSC: 43222501
+
+https://www.cdw.com/shop/products/Cisco-ASA-5506-X-with-FirePOWER-Services-security-appliance/3616643.aspx?pfm=srh

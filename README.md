@@ -7,10 +7,10 @@ SecurityOnion Installed - Needs to be configured
 		- OSSEC-hids=server
 
 	- Bro Directory
-	![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/BRODirectory.png)
+![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/BRODirectory.png)
 		- /nsm/bro/logs consumed by syslog-ng and stored in ELSA
-		![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/BroLogFiles.png)
+![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/BroLogFiles.png)
 
 		- /opt/bro/share/bro/site - custome bro scripts
-		![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/customRboDirc.png)
+![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/customRboDirc.png)
 		

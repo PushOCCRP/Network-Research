@@ -1,5 +1,5 @@
 ServerContainer
 
 	SecurityOnion Installed
-	[](Network-Research/EvilBox/Images/SecurityOnionServices.png)
+	![SecuritOnion Installed](/Network-Research/EvilBox/Images/SecurityOnionServices.png)
 		

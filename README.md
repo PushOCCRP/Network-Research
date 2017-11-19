@@ -1,5 +1,5 @@
 ServerContainer
 
 	SecurityOnion Installed
-	![SecuritOnion Installed](http://Network-Research/EvilBox/Images/SecurityOnionServices.png)
+	![SecuritOnion Installed](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/SecurityOnionServices.png)
 		

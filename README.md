@@ -12,5 +12,5 @@ SecurityOnion Installed - Needs to be configured
 ![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/BroLogFiles.png)
 
 		- /opt/bro/share/bro/site - custome bro scripts
-![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/customRboDirc.png)
+![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/customBroDirc.png)
 		

@@ -29,6 +29,7 @@ ServerContainer
 - [ ] install x-pack to /elasticsearch-5.2.1/bin/elastic-plugin install x-pack
 - [ ] setup password for elasticsearch to get rid of login error
 - [ ] Fix entrypoint in dockerfile, elasticsearch will only run if you attach to it manual.  Look at network in . yml file
+- [ ] add volume for presist log storage
 
 # Elastic Search Fix
 - [x] localhost:9200 by attaching to container
@@ -38,6 +39,7 @@ ServerContainer
 - [ ] install x-pack
 - [ ] error ui-setting Elasticsearch plugin Red
 - [ ] plugin elasticsearch unable to connect to localhost:9200
+- [ ] add volume for presist log storage
 
 # Kibana Fix
 - [x] localhost:5601 by attaching to container
@@ -45,3 +47,5 @@ ServerContainer
 
 # To do logstash
 - [ ] need to test
+- [ ] add volume for presist log storage
+

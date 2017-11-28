@@ -23,13 +23,4 @@ ServerContainer
 			* ServerContainer
 				* Bro
 					* Dockerfile - config to build container
-
 				* Dockerfile - config to build container
-
-![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/curlkibana.png)
-![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/elastic-x-pack.png)
-![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/elasticcurl.png)
-![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/elasticlogin.png)
-![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/elasticpass.png)
-![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/elasticpassfail.png)
-![](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/kibanawithelastic.png)

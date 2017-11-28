@@ -4,12 +4,11 @@ FROM ubuntu:16.04
 CMD "This is from the Metric Container debian:latest with ELk Stack"
 
 # Update the System
-## Install packages
-### Clean up after package installer
 RUN apt-get -y update && apt-get -y upgrade \
 	software-properties-common \
 	apt-transport-https \
 	wget \
+	curl \
 	python-software-properties \
 	debconf-utils \
 	nano \
@@ -19,33 +18,32 @@ RUN apt-get -y update && apt-get -y upgrade \
 RUN add-apt-repository -y ppa:webupd8team/java \
 	&& apt-get update \
 	&& echo "oracle-java8-installer shared/accepted-oracle-license-v1-1 select true" | debconf-set-selections \
-	&& apt-get install -y oracle-java8-installer \
-	&& apt-get autoremove \
-	&& java -version 
+	&& apt-get -y install oracle-java8-installer \
+	&& apt-get autoremove
 
-# ElasticSearch repo added
-## Get elasticsearch signed key
-### Update and upgrade
-RUN echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | tee -a /etc/apt/sources.list.d/elastic-5.x.list 
-RUN wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | apt-key add - \
-	&& apt-get update && apt-get upgrade
+RUN useradd -d /home/esuser -m esuser
+WORKDIR /home/esuser
+ENV JAVA_HOME /usr/lib/jvm/java-8-oracle
 
-RUN	apt-get -y install elasticsearch \
-	&& service elasticsearch start \
-	&& service elasticsearch status 
+# Install elasticsearch
+RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-6.0.0.tar.gz \
+	&& sha1sum elasticsearch-6.0.0.tar.gz \
+	&& tar -xzf elasticsearch-6.0.0.tar.gz \
+	&& chown -R esuser:esuser elasticsearch-6.0.0
 
-RUN apt-get -y install kibana
-# RUN apt-get update \
-# 	&& mkdir /home/gzipFiles
+ADD elasticsearch.yml /home/esuser/elasticsearch-6.0.0/config/elasticsearch.yml
+RUN elasticsearch-6.0.0/bin/elasticsearch -d 
+RUN ps -p 1
 
-# RUN wget https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-5.2.0.deb -P /home/gzipFiles \
-# 	&& dpkg -i elasticsearch-5.2.0.deb 
-# 	#&& nano /etc/elasticsearch/elasticsearch.yml network.host:localhost
-# 	#&& systemctl enable elasticsearch.service
+#-Des.insecure.allow.root=true
 
-# # Install Kibana
-# RUN wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo apt-key add - \
-# 	&& apt-get install apt-transport-https \
-# 	&& echo "deb https://artifacts.elastic.co/packages/5.x/apt stable main" | sudo tee -a /etc/apt/sources.list.d/elastic-5.x.list \
-# 	&& apt-get update && sudo apt-get install kibana
-	#nano /opt/kibana/config/kibana.yml
+#RUN /elasticsearch-6.0.0/bin/ ./elasticsearch
+
+# elasticsearch.yml and Dockerfile are on same location
+
+# ADD elasticsearch /etc/init.d
+# RUN chmod 755 /etc/init.d/elasticsearch
+# RUN update-rc.d elasticsearch defaults \
+# 	&& service --status-all
+#ENTRYPOINT elasticsearch-2.1.1/bin/elasticsearch
+

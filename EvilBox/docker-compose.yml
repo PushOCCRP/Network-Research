@@ -1,0 +1,23 @@
+version: "3"
+
+# Details of each image we want to build
+services:
+  elasticsearch:
+    build: ./MetricContainer/Elasticsearch
+    networks:
+      - my-app-bridge
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+  kibana:
+    build: ./MetricContainer/Kibana
+    networks:
+      - my-app-bridge
+    ports:
+      - "5601:5601"
+    links:
+      - elasticsearch
+networks:
+  my-app-bridge:
+    driver: bridge
+

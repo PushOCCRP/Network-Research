@@ -1,0 +1,10 @@
+#path.data: /home/esuer/data
+#cluster.name: Evilbox
+node.master: true
+node.name: true
+network.host: "0.0.0.0"
+
+# path.conf: /home/esuser/elasticsearch-5.1.2/config
+# path.data: /home/esuser/elasticsearch-5.1.2/data
+# path.logs: /home/esuser/elasticsearch-5.1.2/logs
+# path.plugins: /home/esuser/elasticsearch-5.1.2/plugins

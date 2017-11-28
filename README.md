@@ -1,6 +1,6 @@
 ServerContainer
 
-Folder Structure
+* Folder Structure
 	* Home
 		* archive - version control
 		* docker-compose.yml - spin up elastic, kibana and logstash

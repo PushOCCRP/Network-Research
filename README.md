@@ -1,5 +1,5 @@
 # Internet freedom in a Box
-![charlie](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/Charlie.png)
+![charlie](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/charlie.png)
 
 # Overview
 > The​ ​“evil​ ​dictatorship​ ​in​ ​a​ ​box”​ ​is​ ​a​ ​project​ ​designed​ ​to​ ​allow​ ​contributors​ ​to 

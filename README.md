@@ -2,8 +2,6 @@ ServerContainer
 
 * Folder Structure
 	* Home
-		* archive - version control
-		* docker-compose.yml - spin up elastic, kibana and logstash
 		* EvilBox - Entry point
 			* images - store images of project 
 			* MetricContainer 
@@ -23,6 +21,7 @@ ServerContainer
 			* ServerContainer
 				* Bro
 					* Dockerfile - config to build container
+					*scripts - custom bro scripts 
 				* Dockerfile - config to build container
 
 # To do Elastic Search
@@ -48,4 +47,7 @@ ServerContainer
 # To do logstash
 - [ ] need to test
 - [ ] add volume for presist log storage
+
+# To do Evilbox/ServerContainer/Bro
+- [ ] need to mount scripts directory to dockerfile
 

@@ -23,6 +23,9 @@ ServerContainer
 					* Dockerfile - config to build container
 					*scripts - custom bro scripts 
 				* Dockerfile - config to build container
+		* archive - Old code
+		* python_scripts - directory to hold scapy files
+		* resources.txt - List of resources that were helpful in the development process
 
 # To do Elastic Search
 - [ ] install x-pack to /elasticsearch-5.2.1/bin/elastic-plugin install x-pack

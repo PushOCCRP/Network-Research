@@ -1,4 +1,48 @@
-ServerContainer
+# Internet freedom in a Box
+![charlie](https://github.com/PushOCCRP/Network-Research/blob/master/EvilBox/Images/Charlie.png)
+
+# Overview
+> The​ ​“evil​ ​dictatorship​ ​in​ ​a​ ​box”​ ​is​ ​a​ ​project​ ​designed​ ​to​ ​allow​ ​contributors​ ​to 
+> internet-freedom​ ​projects,​ ​developers​ ​of​ ​anti-censorship​ ​tools,​ ​researchers​ ​and​ ​anyone 
+> interested​ ​in​ ​learning​ ​how​ ​the​ ​internet​ ​functions​ ​under​ ​repressive​ ​regimes​ ​to​ ​do​ ​so.​ ​It​ ​will 
+> give​ ​its​ ​users​ ​the​ ​ability​ ​to​ ​accurately​ ​simulate​ ​the​ ​conditions​ ​placed​ ​on​ ​software​ ​and 
+> technology​ ​users​ ​in​ ​countries​ ​and​ ​situations​ ​where​ ​government​ ​or​ ​dictators​ ​have​ ​complete 
+> control. 
+> In​ ​places​ ​where​ ​internet​ ​freedom​ ​and​ ​civil​ ​society​ ​are​ ​threatened,​ ​simply​ ​editing​ ​a 
+> Wikipedia​ ​entry​ ​or​ ​chatting​ ​on​ ​IRC​ ​can​ ​be​ ​dangerous​ ​political​ ​actions.​ ​Reading​ ​a​ ​news​ ​app 
+> or​ ​sharing​ ​video​ ​can​ ​be​ ​jailable​ ​offenses.
+
+# Background
+> This​ ​project​ ​was​ ​initially​ ​conceived​ ​of​ ​as​ ​part​ ​of​ ​the​ ​Push​ ​project,​ ​an​ ​open​ ​source​ ​mobile 
+> news​ ​app​ ​ecosystem​ ​for​ ​small-​ ​and​ ​medium-sized​ ​news​ ​organizations.​ ​The​ ​initial​ ​Push 
+> deployments​ ​were​ ​done​ ​in​ ​conjunction​ ​with​ ​the​ ​Organized​ ​Crime​ ​and​ ​Corruption​ ​Reporting 
+> Project,​ ​a​ ​project​ ​working​ ​on​ ​its​ ​namesake​ ​in​ ​countries​ ​such​ ​as​ ​Russia,​ ​Azerbaijan,​ ​Moldova 
+> and​ ​Serbia.​ ​These​ ​are​ ​countries​ ​where​ ​censorship,​ ​monitoring,​ ​or​ ​the​ ​spectre​ ​thereof​ ​is​ ​a 
+> very​ ​real​ ​and​ ​daily​ ​occurrence.​ ​They​ ​are​ ​also​ ​quite​ ​technically-advanced​ ​and​ ​politically 
+> threatened.​ ​Development​ ​of​ ​software​ ​tools​ ​that​ ​regular​ ​citizens​ ​and​ ​journalists​ ​can​ ​use​ ​on 
+> a​ ​daily​ ​basis​ ​—​ ​for​ ​efforts​ ​as​ ​vast​ ​as​ ​breaking​ ​major​ ​news​ ​or​ ​releasing​ ​an​ ​investigative 
+> project​ ​or​ ​as​ ​simple​ ​as​ ​contributing​ ​to​ ​a​ ​wiki​ ​and​ ​providing​ ​translations​ ​—​ ​is​ ​of​ ​paramount 
+> interest​ ​and​ ​importance​ ​in​ ​these​ ​regions. ​
+> 
+> Push​ ​is​ ​currently​ ​supported​ ​by​ ​the​ ​Donald​ ​W.​ ​Reynolds​ ​Journalism​ ​Institute​ ​at​ ​the 
+> University​ ​of​ ​Missouri​ ​Journalism​ ​School,​ ​along​ ​with​ ​previous​ ​contributions​ ​from​ ​the 
+> International​ ​Center​ ​For​ ​Journalists.
+
+# Goals
+1. To​ ​build​ ​an​ ​open​ ​source​ ​project​ ​running​ ​ ​virtually​ ​or​ ​on​ ​end-user​ ​accessible 
+hardware​ ​that,​ ​to​ ​various​ ​degrees,​ ​accurately​ ​represents​ ​the​ ​methodology​ ​and 
+modality​ ​of​ ​censorship​ ​often​ ​deployed​ ​by​ ​repressive​ ​regimes. 
+2. To​ ​build​ ​testing​ ​environments​ ​that​ ​allow​ ​the​ ​tweaking​ ​of​ ​Next​ ​Generation​ ​Firewall 
+(NGFW)​ ​style​ ​tools​ ​to​ ​support​ ​open​ ​source​ ​contributors,​ ​editors,​ ​private​ ​citizens​ ​and 
+developers​ ​when​ ​building​ ​anti-censorship​ ​projects. 
+3. To​ ​empower​ ​the​ ​development​ ​of​ ​tools​ ​that​ ​give​ ​voice​ ​to​ ​civil​ ​society​ ​activists, 
+journalists​ ​and​ ​everyday​ ​citizens​ ​living​ ​in​ ​and​ ​supporting​ ​populations​ ​in​ ​censored 
+regimes​ ​and​ ​regions. 
+4. To​ ​allow​ ​the​ ​tools​ ​to​ ​be​ ​simple​ ​to​ ​deploy​ ​on​ ​a​ ​local​ ​development​ ​environment​ ​but 
+powerful​ ​enough​ ​that​ ​small-enterprise​ ​level​ ​hardware​ ​can​ ​also​ ​run​ ​the​ ​same​ ​tools 
+for​ ​load​ ​and​ ​scale​ ​testing. 
+
+# Project Structure
 
 * Folder Structure
 	* Home
@@ -71,3 +115,6 @@ ServerContainer
 [Bro Syntax](./http://blog.bro.org/2011/11/bro-language-cheat-sheet.html)
 
 [MarkDown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+
+### Scapy
+[Scapy Documentation](https://phaethon.github.io/scapy/api/usage.html#recipes)

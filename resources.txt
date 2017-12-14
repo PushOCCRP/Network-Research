@@ -13,8 +13,8 @@
 
 ### CheatSheet
 
-[Bro Logs](https://github.com/corelight/bro-cheatsheets/blob/master/Corelight-Bro-Cheatsheets-2.5.pdf)
+[Bro Logs](/.https://github.com/corelight/bro-cheatsheets/blob/master/Corelight-Bro-Cheatsheets-2.5.pdf)
 
-[Bro Syntax](http://blog.bro.org/2011/11/bro-language-cheat-sheet.html)
+[Bro Syntax](./http://blog.bro.org/2011/11/bro-language-cheat-sheet.html)
 
-![MarkDown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
+[MarkDown](./https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)

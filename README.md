@@ -54,3 +54,20 @@ ServerContainer
 # To do Evilbox/ServerContainer/Bro
 - [ ] need to mount scripts directory to dockerfile
 
+# Resources
+## BRO IDS
+
+### Offical Documentation
+[Bro offical Doc](https://www.bro.org/)
+
+### Online Articles
+[RyeSecurity](http://ryesecurity.blogspot.com/2012/05/learning-bro-scripting-language.html)
+[HoldMyBeer](https://holdmybeer.xyz/2017/06/25/intro-to-threat-intelligence-with-bro-and-elk/)
+
+
+### CheatSheet
+[Bro Logs](/.https://github.com/corelight/bro-cheatsheets/blob/master/Corelight-Bro-Cheatsheets-2.5.pdf)
+
+[Bro Syntax](./http://blog.bro.org/2011/11/bro-language-cheat-sheet.html)
+
+[MarkDown](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)

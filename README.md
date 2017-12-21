@@ -71,6 +71,14 @@ for​ ​load​ ​and​ ​scale​ ​testing.
 		* python_scripts - directory to hold scapy files
 		* resources.txt - List of resources that were helpful in the development process
 
+# DNS Setup
+- [x] - [DNSmasq](https://hub.docker.com/r/jpillora/dnsmasq/) - Following instruction on how to install
+- [x] - Open dns_spoofing.py from the python_scripts/ and change the IFACE to your interface and host <Your IP Address>
+- [x] - Run dns_spoofing.py sudo python dns_spoofing - user grep or look for "This is the original" and "I changed the destination port"
+
+# DNS TODO
+- [] - Work on more reliable way to spoof DNS, instead of having a packet race
+
 # To do Elastic Search
 - [ ] install x-pack to /elasticsearch-5.2.1/bin/elastic-plugin install x-pack
 - [ ] setup password for elasticsearch to get rid of login error
